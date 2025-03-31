@@ -1,5 +1,41 @@
+:root {
+  --color-bg1: #171718; /* Reemplaza el color dark */
+  --color-bg2: #1C1E22; 
+  --color-text1: #ffffff;
+  --color-text2: #5C62EC;
+  --color-text3: #85BFD1;
+  --color-gradiente: linear-gradient(to right, #5C62EC, #59EBFF); /* Degradado para botones e iconos */
+}
+
 body {
   font-family: "Raleway", sans-serif;
+}
+
+/* Custom botones */
+
+.btn-gradiente {
+  background: var(--color-gradiente);
+  color: white; /* O cualquier otro color de texto */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Opcional: Estilo para los botones outline */
+.btn-outline-gradiente {
+  position: relative;
+  overflow: hidden; /* Evita que el pseudo-elemento se desborde */
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: transparent; /* Fondo transparente */
+  color: var(--color-text2); /* Color del texto */
+  border: 2px solid transparent; /* Borde transparente */
+}
+
+/* navbar */
+
+.navbar-custom {
+  background-color: var(--color-bg1);
 }
 
 /* Hero Section */
