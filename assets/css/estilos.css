@@ -21,15 +21,19 @@ body {
   border-radius: 5px;
 }
 
-/* Opcional: Estilo para los botones outline */
-.btn-outline-gradiente {
-  position: relative;
-  overflow: hidden; /* Evita que el pseudo-elemento se desborde */
-  padding: 10px 20px;
-  border-radius: 5px;
-  background: transparent; /* Fondo transparente */
-  color: var(--color-text2); /* Color del texto */
-  border: 2px solid transparent; /* Borde transparente */
+.btn-gradiente-outline {
+  background: none; 
+  color: var(--color-text2); 
+  border: 2px solid;
+  border-image: var(--color-gradiente);
+  border-image-slice: 1;
+  padding: 8px 18px;
+  border-radius: 8px;
+}
+
+.btn-gradiente-outline:hover {
+  background: var(--color-gradiente);
+  color: white;
 }
 
 /* navbar */
